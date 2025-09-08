@@ -1,10 +1,10 @@
-//--Funtional category section--//
+// category functionaluty
 const loadcategory = () => {
   fetch("https://openapi.programming-hero.com/api/categories")
     .then((res) => res.json())
     .then((json) => displaycategory(json.categories));
 };
-//--category display--//
+// display category
 const displaycategory = (categories) => {
   const categoryContainer = document.getElementById("category-container");
   //   categoryContainer.innerHTML = "";
@@ -13,16 +13,18 @@ const displaycategory = (categories) => {
     const button = document.createElement("button");
     button.id = category.id;
     button.className =
-      "w-[200px] h-[35px] px-2  text-left hover:bg-[#15803D] hover:text-white rounded text-[16px]";
+      "md:w-[200px] w-full h-[35px] px-2  text-left hover:bg-[#15803D] hover:text-white rounded md:text-[16px] text-2xl md:mb-0 mb-3";
     button.innerText = category.category_name;
 
     categoryContainer.appendChild(button);
-     }
-     //--hover process--//
-       categoryContainer.addEventListener("click", (e) => {
+    // console.log(category);
+  }
+
+  //   hover active process
+  categoryContainer.addEventListener("click", (e) => {
     const allBtns = document.querySelectorAll("button");
 
-    
+    // console.log(allBtns);
     allBtns.forEach((btn) => {
       btn.classList.remove("bg-[#15803D]", "text-white");
     });
@@ -35,9 +37,11 @@ const displaycategory = (categories) => {
     }
   });
 };
-//--Card load by section data load section function--//
+
+//--card loadby category data load funtion--//
 const loaddefaultData = () => {
   fetch(`https://openapi.programming-hero.com/api/plants`)
     .then((res) => res.json())
     .then((json) => displayCard(json.plants));
 };
+

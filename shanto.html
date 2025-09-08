@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Green-Earth </title>
-      <link
+<link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
       type="text/css"
@@ -14,7 +8,7 @@
       src="https://kit.fontawesome.com/cc12e64860.js"
       crossorigin="anonymous"
     ></script>
-    <!-- font -->
+   <!---Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,15 +21,15 @@
       href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-  </head>
+</head>
   <style>
     .inter {
       font-family: "Inter", sans-serif;
       font-optical-sizing: auto;
     }
   </style>
-  <body class="inter bg-[#F0FDF4]">
-    <nav class="bg-[#15803D] text-white">
+<body class="inter bg-[#F0FDF4]">
+   <nav class="bg-[#15803D] text-white">
       <div
         class="flex md:flex-row flex-col md:justify-between w-11/12 mx-auto items-center py-5"
       >
@@ -59,17 +53,16 @@
         </div>
       </div>
     </nav>
-
-    <!-- header section -->
-    <section class="bg-[#CFF0DC] relative h-auto">
+        <!--Header-section-->
+      <section class="bg-[#CFF0DC] relative h-auto">
       <div class="flex justify-between">
         <img
-          src="./hero-leaf1.png"
+          src="./assets/hero-leaf1.png"
           alt=""
           class="md:w-[420px] w-[90px] h-[100px] md:h-auto mt-[60px]"
         />
         <img
-          src="./hero-leaf2.png"
+          src="./assets/hero-leaf2.png"
           alt=""
           class="md:w-[420px] md:h-auto md:block w-[90px] h-[100px] mt-[60px]"
         />
@@ -100,30 +93,23 @@
       </div>
     </section>
     <!-- plant category section -->
-    <section class="w-11/12 mx-auto mt-10">
-      <h1
-        class="text-center font-semibold md:text-3xl text-4xl md:p-10 text-2xl p-3 mb-5"
-      >
+      <section class="w-11/12 mx-auto mt-10">
+      <h1 class="text-center font-semibold text-3xl p-10">
         Choosee your trees
       </h1>
 
-      <div class="md:grid md:grid-cols-12 md:gap-4 flex flex-col md:flex-row">
-        <div class="md:col-span-2 mb-5 ml-5 md:ml-0" id="category-container">
+      <div class="grid grid-cols-12">
+        <div class="col-span-2" id="category-container">
           <!-- categoryclass="w-48 h-9 px-2 text-left rounded text-base bg-green-600 text-white" -->
-          <a
-            href="./index.html"
+          <button
             id="all-plants"
-            class="w-48 h-9 px-2 text-left rounded text-base hover:bg-[#15803D] hover:text-white hover:h-[30px]"
+            class="w-48 h-9 px-2 text-left rounded text-base bg-green-600 text-white"
           >
             All Plants
-          </a>
+          </button>
         </div>
-
-        <!-- card container -->
-        <div
-          class="col-span-8 grid md:grid-cols-3 grid-cols-1"
-          id="card-container"
-        >
+     <!--Card container--->
+     <div class="col-span-8 grid grid-cols-3" id="card-container">
           <!-- card -->
           <div
             class="fixed inset-0 flex flex-col justify-center items-center bg-white/50 z-50"
@@ -134,29 +120,23 @@
             <p class="mt-4 text-blue-700 font-medium text-sm">Loading...</p>
           </div>
         </div>
-        <div
-          class="md:col-span-2 bg-white md:h-[800px] md:w-[250px] w-[350px] rounded shadow-sm mx-auto h-auto"
-        >
+        <div class="col-span-2 bg-white h-[800px] w-[250px] rounded shadow-sm">
           <!-- add to cart -->
           <h2 class="p-3 font-semibold text-[18px]" id="Addtocart-container">
             Your Cart
           </h2>
-          <!-- <hr class="m-2 border-gray-300" /> -->
-          <div class="text-[13px] ml-25" id="total-price"></div>
         </div>
       </div>
     </section>
-
+     
     <!-- about plant section -->
-    <section
-      class="mt-30 md:ml-[293px] md:mr-[295px] ml-[30px] mr-[30px] md:mb-30 mb-5"
-    >
-      <h1 class="md:text-center font-semibold md:text-3xl text-4xl mb-10">
+    <section class="mt-30 ml-[293px] mr-[295px] mb-10">
+      <h1 class="text-center font-semibold text-3xl mb-10">
         About the Campaign
       </h1>
-      <div class="flex md:gap-10 gap-0 md:flex-row flex-col">
-        <img src="./about.png" alt="" class="md:w-[500px] h-[400px] w-full" />
-        <div class="text-gray-800 md:mt-20 mt-10 md:text-[14px] text-[16px]">
+      <div class="flex gap-10">
+        <img src="./assets/about.png" alt="" class="w-[500px] h-[400px]" />
+        <div class="text-gray-800 mt-20 text-[14px]">
           <p>
             Green Earth is a global tree plantation initiative dedicated to
             fighting climate change. Since our start, we’ve planted over 500,000
@@ -171,54 +151,46 @@
         </div>
       </div>
     </section>
-    <!-- our impact section -->
+      <!-- our impact section -->
     <section class="bg-[#CFF0DC]">
-      <h1
-        class="text-center font-semibold md:text-3xl text-4xl mb-10 md:pt-20 pt-10"
-      >
-        Our Impact
-      </h1>
-      <div class="flex md:gap-10 gap-1 md:flex-row flex-col w-11/12 mx-auto">
+      <h1 class="text-center font-semibold text-3xl mb-10 pt-20">Our Impact</h1>
+      <div class="flex gap-10 md:flex-row flex-col w-11/12 mx-auto">
         <div
-          class="border-1 border-gray-300 bg-white md:w-[450px] w-[360px] mx-auto h-[156px] text-center p-10 rounded-xl md:mb-20 mb-5"
+          class="border-1 border-gray-300 bg-white w-[450px] h-[156px] text-center p-10 rounded-xl mb-20"
         >
           <h1 class="text-green-800 font-semibold text-[32px]">120K+</h1>
           <p class="text-gray-600 text-[16px]">Communities Involved</p>
         </div>
         <div
-          class="border-1 border-gray-300 bg-white md:w-[450px] w-[360px] mx-auto h-[156px] text-center p-10 rounded-xl md:mb-20 mb-5"
+          class="border-1 border-gray-300 bg-white w-[450px] h-[156px] text-center p-10 rounded-xl mb-20"
         >
           <h1 class="text-green-800 font-semibold text-[32px]">30K+</h1>
           <p class="text-gray-600 text-[16px]">Countries Reached</p>
         </div>
         <div
-          class="border-1 border-gray-300 bg-white md:w-[450px] w-[360px] mx-auto h-[156px] text-center p-10 rounded-xl mb-20"
+          class="border-1 border-gray-300 bg-white w-[450px] h-[156px] text-center p-10 rounded-xl mb-20"
         >
           <h1 class="text-green-800 font-semibold text-[32px]">500K+</h1>
           <p class="text-gray-600 text-[16px]">Tree Planted</p>
         </div>
       </div>
     </section>
-    <!-- plant a tree -->
-    <section class="bg-[#166534] h-[450px]">
+      <!-- plant a tree -->
+      <section class="bg-[#166534] h-[450px]">
       <h1 class="text-center font-semibold text-2xl mb-5 pt-20 text-white">
         Plant a Tree Today
       </h1>
       <div
-        class="bg-white/10 p-9 md:w-[470px] w-[370px] mx-auto h-[240px] rounded-[10px] shadow-xl"
+        class="bg-white/10 p-9 w-[470px] h-[240px] mx-[530px] rounded-[10px] shadow-xl"
       >
         <div>
-          <input
-            type="text"
-            placeholder="Your Name"
-            class="input md:w-[400px] w-[300px]"
-          />
+          <input type="text" placeholder="Your Name" class="input w-[400px]" />
           <input
             type="text"
             placeholder="Your Email Address"
-            class="input md:w-[400px] w-[300px] mt-2"
+            class="input w-[400px] mt-2"
           />
-          <select class="select mt-2 text-gray-900 md:w-[400px] w-[300px]">
+          <select class="select mt-2 text-gray-900 w-[400px]">
             <option disabled selected>Number of trees</option>
             <option>1 tree - $5</option>
             <option>5 tree - $50</option>
@@ -227,37 +199,30 @@
 
           <button
             type="button"
-            class="btn bg-[#facc15] mt-2 md:w-[400px] w-[300px] font-bold rounded-xl border-0 shadow-none text-green-800"
+            class="btn bg-[#facc15] mt-2 w-[400px] font-bold rounded-xl border-0 shadow-none text-green-800"
           >
             Donate Now
           </button>
         </div>
       </div>
     </section>
-
-    <!-- footer section -->
+     <!-- footer section -->
     <section class="bg-[#14532D] h-[72px]">
       <p class="text-center text-white pt-8 font-extralight text-[16px]">
         © 2025 Green Earth. All Rights Reserved.
       </p>
     </section>
-
-    <!-- Open the modal using ID.showModal() method -->
-
+          <!---Using ID.showModel()-Mathood-->
+          
     <dialog id="plant-details-modal" class="modal">
       <div class="modal-box w-[380px]">
         <div id="modal-container"></div>
         <div class="modal-action">
           <form method="dialog">
-            <!-- if there is a button in form, it will close the modal -->
-            <button class="btn">Close</button>
+
+            <!---Button inform, close the model-->
+              <button class="btn">Close</button>
           </form>
         </div>
       </div>
     </dialog>
-
-    <!--Js connect-->
-    <script src="./script.js"></script>
-
-</body>
-</html>
