@@ -71,7 +71,7 @@ const displayCard = (plants) => {
   plants.forEach((plant) => {
     cardcontainer.innerHTML += `<div class=" bg-white shadow-lg md:w-[296px] w-[350px] mx-auto h-[360px] p-3 rounded mb-3">
     <div >
-            <img src="${plant.image}" alt="" class="h-[180px] w-full" />
+            <img src="${plant.image}" alt="" class="h-48 w-full object-cover rounded" />
           </div>
           <h1 class="font-semibold pt-2 " id="${plant.id}">${plant.name}</h1>
           <p class="text-gray-500 text-[9px] pt-1 pb-1">${plant.description}</p>
@@ -157,7 +157,7 @@ const showdatainModal = (plants) => {
 
   modalcontainer.innerHTML = `
             <h1 class="font-bold pt-2 mb-2 text-[20px]" >${plants.name}</h1> 
-            <img src="${plants.image}" alt="" class="h-[180px] w-full" />
+            <img src="${plants.image}" alt="" class="object-cover h-full w-full" />
             <h1 class=" mt-2 mb-2 "> <span class="font-bold text-[13px]">Category:</span>
             <span class="text-[13px]">${plants.category}</span>
               
